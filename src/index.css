@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&display=swap');
+
+:root{
+  --primary-color: #05292e;
+  --secondary-color: #177fe6;
+  --font-base : 'Roboto', sans-serif;
+  --font-alternative: 'Shadows Into Light',cursive ;
+}
+html {
+  font-family: var(--font-alternative);
+  box-sizing: border-box;
+  background: linear-gradient(to bottom right, rgb(32, 59, 116), rgb(7, 106, 90));
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  body {
+    margin: 0;
+  }
+  h1,
+  h2,
+  h3,
+  p,
+  ul,
+  hr {
+    margin: 0;
+  }
+  img {
+    width: 100%;
+    display: block;
+  }
+  input,
+  button {
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+  }
+  input {
+    outline: none;
+  }
+}
+/* Reusable Classes */
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container{
+  display: grid;
+}
+
+.app__moveimg {
+  width: 10%;
+  position: absolute;
+	font-size: 3.5rem;
+}
+
+.app__moveimg--1 {
+  top: 15%;
+	left: 5%;
+}
+.app__moveimg--2 {
+  top: 47%;
+	left: 83%;
+}
+.app__moveimg--3{
+  bottom: 8%;
+  left: 8%;
+}
+.app__moveimg--4{
+  bottom: 0%;
+  right: 8%;
+}
+.app__moveimg--5{
+  top: 30%;
+  left: 55%;
+}
